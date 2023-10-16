@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Turn ON / OFF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bulb" id="Bulb"> </div>
+        <div class="btn">
+            <button id="btn-on" onclick="bulbOn()"> on</button>
+            <button id="btn-off" onclick="bulbOff()">Off</button>
+        </div>
+    </div>
+    
+
+    <script>
+        let Bulb =document.getElementById("Bulb");
+
+        function bulbOn(){
+            Bulb.style.backgroundColor="yellow";
+            Bulb.style.boxShadow="5px 5px 50px yellow , -5px -5px 50px yellow";
+        }
+        function bulbOff(){
+            Bulb.style.backgroundColor="white";
+            Bulb.style.boxShadow="0px 0px 0px black";
+        }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

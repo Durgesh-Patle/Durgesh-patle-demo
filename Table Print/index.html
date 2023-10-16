@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Table Print Using Javascript.</h2>
+
+    <h3 id="table"></h3>
+
+    <button onclick="table()">Click me</button>
+
+    <script>
+        let tbl = document.getElementById("table");
+
+        function table() {
+            let num =prompt("enter any number:-")
+            // document.write(num);
+            
+            for (let i = 1; i <= 10; i++) {
+                // for(let j=i;j<=10;j++){
+                    document.write(i*num +"<br>");
+                }
+            }
+        // }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 510;
+            text-align: justify;
+        }
+
+        .clr {
+            margin-inline: 10%;      
+            text-align: right;
+        }
+        .clr h1{
+            margin-inline: 3.5%;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            gap: 10px;
+            border: 1px solid grey;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #black {
+            background-color: black;
+
+        }
+
+        #white {
+            background-color: #fff;
+
+        }
+
+        #aqua {
+            background-color: aqua;
+
+        }
+
+        #voilet {
+            background-color: violet;
+
+        }
+
+        #yellow {
+            background-color: yellow;
+
+        }
+
+        #blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clr">
+            <h1 class="text">Color-Switcher.</h1>
+            <span class="btn" id="black" onclick="colorBG('black')"></span>
+            <span class="btn" id="white" onclick="colorBG('white')"></span>
+            <span class="btn" id="aqua" onclick="colorBG('aqua')"></span>
+            <span class="btn" id="voilet" onclick="colorBG('violet')"></span>
+            <span class="btn" id="yellow" onclick="colorBG('yellow')"></span>
+            <span class="btn" id="blue" onclick="colorBG('blue')"></span>
+        </div>
+    <h2 class="text"> About Us </h2>
+    <!-- <img src="Project2.png" alt=""> -->
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odio labore sapiente nihil, veniam numquam
+        blanditiis rerum saepe, consectetur rem recusandae similique, non harum. Necessitatibus suscipit distinctio
+        nesciunt quod tempore sunt voluptates voluptatem eligendi ad non ullam, in soluta aut sapiente velit facere
+        rerum numquam omnis perspiciatis repellat tempora dolorem mollitia! Numquam saepe dolor sapiente porro aut
+        quaerat itaque alias modi corrupti non cumque eligendi, officia dicta doloribus placeat perspiciatis repudiandae
+        aspernatur est architecto laboriosam assumenda ex neque? Soluta natus minus laborum adipisci eaque! Quos ipsam
+        minus recusandae facere alias possimus eos error esse ullam, expedita nihil. Delectus exercitationem quasi
+        adipisci. Odit, tempora magnam? Tempora sit perspiciatis minus nulla facilis voluptatibus, ad amet, ut eos
+        fugiat aspernatur iste at. Minima temporibus cupiditate esse deleniti repellat! Vero cumque at similique. Quidem
+        exercitationem dolores ea quis at labore maxime ex rem! Cumque, autem voluptatum nulla vitae dignissimos
+        eligendi quibusdam aut, modi voluptatem accusamus soluta doloremque atque sit corporis magnam alias expedita
+        ratione! Magnam repellendus voluptate vel laboriosam perspiciatis eum iure consequuntur officia odit. Itaque,
+        ipsum praesentium! Optio, omnis. Repellat dolores pariatur aut non assumenda molestiae est quis eligendi? Est
+        dolor, eligendi quam dicta laudantium debitis nulla natus quia impedit atque dolorem consectetur sapiente
+        molestias modi ab rem enim earum rerum, tenetur dolore temporibus. Non voluptate vitae omnis voluptatem maxime
+        architecto animi et impedit blanditiis? Unde modi natus tempore quod sint obcaecati nemo suscipit, dolorum harum
+        eveniet ab, voluptate adipisci velit ullam doloremque? Reiciendis libero distinctio voluptatem. Id veritatis
+        optio, necessitatibus, blanditiis inventore rerum, commodi atque ipsum officiis nihil omnis obcaecati delectus
+        reiciendis quas in temporibus! Ipsam molestiae consectetur reprehenderit, maxime accusamus placeat iure nihil
+        neque, error debitis fuga doloribus vel odit doloremque in qui velit quos rerum numquam nobis animi! Laboriosam,
+        temporibus dolore, qui dolorem odio obcaecati impedit tempore adipisci cum quae, aut excepturi nulla illum
+        aliquam nam sequi dolor. Sit asperiores iste necessitatibus, exercitationem aliquam expedita accusantium impedit
+        saepe earum, optio vero voluptatum sint repellat quia quod illum tenetur similique doloremque totam aspernatur
+        provident consequatur odit ipsa error. Architecto, repellat impedit! Laudantium a rerum, vero sit ipsa
+        asperiores! Quos eveniet tempora eum in dignissimos magni vel suscipit tenetur excepturi nihil adipisci expedita
+        vitae quae, incidunt quidem quo nulla ullam libero. Ab explicabo dolorem ratione provident doloribus
+        perspiciatis corporis optio numquam doloremque voluptas, excepturi praesentium esse expedita at, ducimus eaque
+        voluptates! Iusto, unde totam ullam tempora eaque eum non quasi explicabo! Nesciunt at aspernatur tempore
+        consequatur blanditiis dolor dolorem vero itaque fugiat. Sit ratione voluptas delectus quaerat quod expedita
+        corporis, quam quibusdam ut enim rerum distinctio ex velit minus! Officia, sapiente? Accusamus repellat
+        reiciendis vitae dignissimos ducimus quos accusantium, ipsa dolorum, culpa delectus consequuntur facilis
+        doloremque, nulla possimus dolores at? Omnis ea nam, beatae reiciendis sit eveniet corporis, fugiat laboriosam
+        impedit praesentium consequuntur voluptates, dolor veniam earum blanditiis doloremque quibusdam quidem tempore
+        repellat! Mollitia, molestias error, a iure earum perferendis maiores aliquid eum, doloribus debitis distinctio
+        quidem magni illo soluta impedit facere autem quia itaque esse natus quod modi eius? Sed, amet.</p>
+
+
+        <script>
+            function colorBG(color){
+                document.body.style.backgroundColor=color;
+                let txt =document.getElementsByClassName("text");
+                if(color == "black"){
+                    for(let elm of txt){
+                        elm.style.color ="white";
+                    }
+                }
+                else{
+                    for(let elm of txt){
+                        elm.style.color ="black";
+                    }
+                }
+            }
+        </script>
+
+</body>
+
+</html>
